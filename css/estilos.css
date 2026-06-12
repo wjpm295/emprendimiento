@@ -48,26 +48,50 @@ header p{
 /* MENU */
 /* ========================= */
 
-nav{ display:flex; justify-content:center; align-items:center; flex-wrap:wrap; background:rgba(2,6,23,0.95); backdrop-filter:blur(10px); position:sticky; top:0; z-index:1000; box-shadow:0px 4px 15px rgba(0,0,0,0.4); padding:10px 0; }
-
-nav a{
-    color:white;
-    padding:18px 25px;
-    text-decoration:none;
-    font-size:17px;
-    transition:0.3s;
-    border-bottom:3px solid transparent;
+nav {
+    background-color: #0b132b; /* Un fondo oscuro elegante */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra elegante abajo del menú */
+    position: sticky; /* Se queda fijo arriba al bajar la pantalla */
+    top: 0;
+    z-index: 1000;
 }
 
-nav a:hover{
-    color:#22c55e;
-    border-bottom:3px solid #22c55e;
-    background:rgba(255,255,255,0.05);
+/* Estilo para cada botón del menú */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 19px; /* Botones más grandes */
+    font-weight: bold;
+    padding: 12px 24px; /* Espaciado interno para que parezcan botones reales */
+    margin: 0 10px; /* Separación entre botones */
+    border-radius: 8px; /* Bordes suavemente redondeados */
+    transition: all 0.3s ease; /* Transición suave para el efecto visual */
+    display: inline-block;
 }
 
-/* ========================= */
-/* SECCIONES */
-/* ========================= */
+/* Iconos dentro de los botones */
+nav a i {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+    font-size: 18px;
+    color: #00b4d8; /* Un color celeste brillante para destacar el adorno */
+    transition: transform 0.3s ease;
+}
+
+/* --- ADORNOS VISUALES AL PASAR EL MOUSE (HOVER) --- */
+nav a:hover {
+    background-color: #0076ff; /* El fondo cambia a azul brillante */
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba(0, 118, 255, 0.6); /* Destello de luz azul */
+    transform: translateY(-3px); /* El botón sube ligeramente de forma animada */
+}
+
+/* Efecto en el icono al pasar el mouse */
+nav a:hover i {
+    color: #ffffff; /* El icono cambia a blanco junto con el texto */
+    transform: scale(1.2); /* El icono se agranda un poco más */
+}
 
 section{
     padding:70px 20px;
